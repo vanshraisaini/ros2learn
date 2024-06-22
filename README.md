@@ -2,10 +2,13 @@
 
 ## Pull container from docker hub
 
-WIP
+```shell
+docker pull vanshrai/ros2learn
+```
 
 ## Build the container
-Alternatively, instead of pulling the docker image from docker hub, you can build it locally:
+Alternatively, instead of pulling the docker image from docker hub, you can build it locally.
+Please note that the building can take up to 30 minutes.
 ```shell
 cd ~ && git clone -b staging https://github.com/vanshraisaini/ros2learn.git
 cd ~/ros2learn/docker
