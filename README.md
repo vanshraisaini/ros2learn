@@ -44,6 +44,11 @@ cd ~/ros2_learn/
 docker rm r2l || true && docker run -it --name=r2l -h ros2learn -v `pwd`:/tmp/ros2learn vanshrai/ros2learn
 ```
 
+After starting the container, run the following command to load the visual models which will be used by gzclient later. 
+```shell
+cp -r /root/ros2_mara_ws /tmp/ros2learn
+```
+
 ### Development/Research mode
 You can install new software such as file editors (e.g. `apt install nano`), which would be useful if you are trying to find the optimal parameters for a network for instance.
 
