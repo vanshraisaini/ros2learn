@@ -31,13 +31,14 @@ Create a folder where the simulation and training data will be stored.
 cd ~/. && mkdir ros2_learn
 ```
 
-## Run a new r2l container
+# Start a new container
 
 Before starting the container, move to the directory where all the data should be stored.
 
 ```shell
 cd ~/ros2_learn/
 ```
+# Run a new r2l container
 
 ```shell
 docker rm r2l || true && docker run -it --name=r2l -h ros2learn -v `pwd`:/tmp/ros2learn vanshrai/ros2learn
