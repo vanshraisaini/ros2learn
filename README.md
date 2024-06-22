@@ -1,6 +1,15 @@
-# ROS2Learn Docker container usage
+# ROS2Learn with Docker
+
+This repository contains ROS 2 enabled Artificial Intelligence (AI)
+and Reinforcement Learning (RL) [algorithms](algorithms/) that run in selected [environments](environments/) and was forked from the AcutronicRoboitcs/ros2learn repo. Please checkout the parent repo to learn more especially if you want to learn how to use the repo without docker containers.
+
+The repository contains the following:
+- [algorithms](algorithms/): techniques used for training and teaching robots.
+- [environments](environments/): pre-built environments of interest to train selected robots.
+- [experiments](experiments/): experiments and examples of the different utilities that this repository provides.
 
 ## Pull container from docker hub
+Pull the docker container containing the repo from the docker hub.
 
 ```shell
 docker pull vanshrai/ros2learn
@@ -13,21 +22,6 @@ Please note that the building can take up to 30 minutes.
 cd ~ && git clone -b staging https://github.com/vanshraisaini/ros2learn.git
 cd ~/ros2learn/docker
 docker build -t r2l .
-```
-#### First run, gazebo model setup.
-
-```shell
-cd ~/ros2learn/docker
-docker rm r2l || true && docker run -it --name=r2l -h ros2learn -v `pwd`/tmp:/tmp/ros2learn r2l
-
-#Inside the docker container, used to load visual models
-cp -r /root/ros2_mara_ws /tmp/ros2learn
-```
-
-Outside the docker container, copy `ros2_mara_ws` folder to a permanent location so that you don't need to repeat this process in the future.
-```
-cd ~/ros2learn/docker
-cp -r tmp/ros2_mara_ws .
 ```
 
 ## Run the container
