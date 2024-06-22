@@ -34,7 +34,7 @@ cd ~/ros2learn/docker
 # Clean the existing $PWD/tmp directory. You might need `sudo`.
 rm -rf `pwd`/tmp/*
 # Run a new r2l container
-docker rm r2l || true && docker run -it --name=r2l -h ros2learn -v `pwd`/tmp:/tmp/ros2learn r2l
+docker rm r2l || true && docker run -it --name=r2l -h ros2learn -v `pwd`:/tmp/ros2learn r2l
 ```
 
 ### Development/Research mode
