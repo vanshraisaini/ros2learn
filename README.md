@@ -1,7 +1,7 @@
 # ROS2Learn with Docker
 
 This repository contains ROS 2 enabled Artificial Intelligence (AI)
-and Reinforcement Learning (RL) [algorithms](algorithms/) that run in selected [environments](environments/) and was forked from the AcutronicRoboitcs/ros2learn repo. Please checkout the parent repo to learn more especially if you want to learn how to use the repo without docker containers.
+and Reinforcement Learning (RL) [algorithms](algorithms/) that run in selected [environments](environments/). The repo was forked from the AcutronicRoboitcs/ros2learn and I highly encourage to checkout the parent repo to learn more, especially if you want to learn how to use the repo without docker containers.
 
 The repository contains the following:
 - [algorithms](algorithms/): techniques used for training and teaching robots.
