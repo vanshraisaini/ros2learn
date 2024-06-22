@@ -106,7 +106,6 @@ sh gzclient.sh
 From your main OS, launch tensorboard pointing it to the files shared from the docker container. You can use the absolute path to any specific file or folder available in that directory.
 
 ```shell
-cd ~ && git clone -b dashing https://github.com/AcutronicRobotics/ros2learn
-cd ~/ros2learn/docker
+cd ~/ros2_learn/ros2learn/docker
 sudo tensorboard --logdir=`pwd`
 ```
