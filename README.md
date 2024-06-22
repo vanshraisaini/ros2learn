@@ -38,7 +38,7 @@ Before starting the container, move to the directory where all the data should b
 ```shell
 cd ~/ros2_learn/
 ```
-# Run a new r2l container
+## Run a new r2l container
 
 ```shell
 docker rm r2l || true && docker run -it --name=r2l -h ros2learn -v `pwd`:/tmp/ros2learn vanshrai/ros2learn
