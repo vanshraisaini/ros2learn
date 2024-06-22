@@ -95,6 +95,7 @@ python3 train_ppo2_mlp.py
 Make sure you have gazebo already installed in your main Ubuntu system and you are in the same path from which you executed the `docker run` command, that is, ~/ros2_learn folder. If you are already running the simulation in the default port, you can access the visual interface the following way opening a new terminal:
 ```shell
 # Do not use -g --gzclient flag
+# Please note that it may take some time for gzclient to set the world during the first launch.
 cd ~/ros2_learn && git clone -b staging https://github.com/vanshraisaini/ros2learn.git
 cp ~/ros2_learn/ros2learn/docker/gzclient.sh ./gzclient.sh
 sh gzclient.sh
