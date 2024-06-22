@@ -5,9 +5,9 @@
 WIP
 
 ## Build the container
-
+Alternatively, instead of pulling the docker image from docker hub, you can build it locally:
 ```shell
-cd ~ && git clone -b dashing https://github.com/AcutronicRobotics/ros2learn
+cd ~ && git clone -b staging https://github.com/vanshraisaini/ros2learn.git
 cd ~/ros2learn/docker
 docker build -t r2l .
 ```
