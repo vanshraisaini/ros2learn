@@ -91,7 +91,7 @@ Make sure you have gazebo already installed in your main Ubuntu system and you a
 ```shell
 # Do not use -g --gzclient flag
 cd ~/ros2_learn && git clone -b staging https://github.com/vanshraisaini/ros2learn.git
-cp ~/ros2learn/docker/gzclient.sh ./gzclient.sh
+cp ~/ros2_learn/ros2learn/docker/gzclient.sh ./gzclient.sh
 sh gzclient.sh
 ```
 
