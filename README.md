@@ -44,7 +44,7 @@ cd ~/ros2_learn/
 docker rm r2l || true && docker run -it --name=r2l -h ros2learn -v `pwd`:/tmp/ros2learn vanshrai/ros2learn
 ```
 
-After starting the container, run the following command to load the visual models which will be used by gzclient later. 
+After starting the container, run the following command inside the container to load the visual models which will be used by gzclient later. 
 ```shell
 cp -r /root/ros2_mara_ws /tmp/ros2learn
 ```
